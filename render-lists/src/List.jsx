@@ -14,9 +14,9 @@ function List(){
     // const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
        const highCalFruits = fruits.filter(fruit => fruit.calories >= 100);
 
-    const listItems = highCalFruits.map(highCalFruits => <li key={highCalFruits.id}>
-                                           {highCalFruits.name}: &nbsp;
-                                           <b>{highCalFruits.calories}</b></li>);
+    const listItems = fruits.map(fruit => <li key={fruit.id}>
+                                           {fruit.name}: &nbsp;
+                                           <b>{fruit.calories}</b></li>);
 
     return(<ul>{listItems}</ul>);
 }
