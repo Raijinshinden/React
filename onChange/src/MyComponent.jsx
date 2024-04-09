@@ -6,7 +6,7 @@ function MyComponent(){
     const [quantity, setQuantity] = useState(1);
     const [comment, setComment] = useState();
     const [payment, setPayment] = useState("");
-    const [shipping, setShipping] = useState("");
+    const [shipping, setShipping] = useState("Delivery");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -52,13 +52,14 @@ function MyComponent(){
                            checked={shipping === "Pick Up"}
                            onChange={handleShippingChange}/>
                     Pick Up
-                </label>
+                </label><br></br>
                 <label>
                 <input type='radio' value='Delivery'
                            checked={shipping === "Delivery"}
                            onChange={handleShippingChange}/>
                     Delivery
                 </label>
+                <p>Shipping: {shipping}</p>
            </div>)
 }
 export default MyComponent
