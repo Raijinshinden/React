@@ -3,10 +3,11 @@
 //               a callback to the onClick event handler.
 
 import Button from './Button.jsx'
+import ProfilePicture from '../../render-lists/src/ProfilePicture.jsx'
 
 function App() {
 
-  return(<><Button /></>)
+  return(<><ProfilePicture /></>)
 }
 
 export default App
