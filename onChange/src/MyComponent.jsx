@@ -35,8 +35,12 @@ function MyComponent(){
                 <p>Comment: {comment}</p>
 
                 <select value={payment} onChange={handlePaymentChange}>
-                    <option>Select an option</option>
+                    <option value="">Select an option</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Giftcard">Giftcard</option>
                 </select>
+                <p>Payment: {payment}</p>
            </div>)
 }
 export default MyComponent
