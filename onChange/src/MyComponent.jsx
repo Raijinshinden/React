@@ -33,6 +33,10 @@ function MyComponent(){
                 <textarea value={comment} onChange={handleCommentChange}
                 placeholder='Enter delivery instructions'/>
                 <p>Comment: {comment}</p>
+
+                <select value={payment} onChange={handlePaymentChange}>
+                    <option>Select an option</option>
+                </select>
            </div>)
 }
 export default MyComponent
