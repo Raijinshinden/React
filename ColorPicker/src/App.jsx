@@ -1,11 +1,8 @@
+import ColorPicker from "./ColorPicker.jsx";
 
 function App() {
 
-  return(
-    <>
-      
-    </>
-  );
+  return(<ColorPicker />)
 }
 
 export default App
