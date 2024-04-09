@@ -1,9 +1,15 @@
-
+import React, {useState} from 'react';
 function Counter(){
 
     const [count, setCount] = useState(0);
 
     const increment = () => {
+        
+        // Uses the CURRENT state to calculate the NEXT state.
+        // set functions do not trigger an update.
+        // React batches together state updates for performance reasons.
+        // NEXT state becomes the CURRENT state after an update.
+
         setCount(count + 1);
     }
 
