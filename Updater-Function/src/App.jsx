@@ -3,10 +3,11 @@
 //                    Allow for safe updates based on the previous state
 //                    Used with multiple state updates and asynchronous functions
 //                    Good practice to use updater functions
+import Counter from "./Counter.jsx"
 
 function App() {
 
-  return(<></>)
+  return(<Counter />)
 }
 
 export default App
