@@ -5,6 +5,7 @@ function MyComponent(){
     const [name, setName] = useState("Guest");
     const [quantity, setQuantity] = useState(1);
     const [comment, setComment] = useState();
+    const [payment, setPayment] = useState("");
 
     function handleNameChange(event){
         setName(event.target.value);
@@ -16,6 +17,10 @@ function MyComponent(){
 
     function handleCommentChange(event){
         setComment(event.target.value);
+    }
+
+    function handlePaymentChange(event){
+        setPayment(event.target.value);
     }
 
     return(<div>
