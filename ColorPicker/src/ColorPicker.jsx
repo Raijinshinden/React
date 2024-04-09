@@ -4,8 +4,11 @@ function ColorPicker(){
 
     const [color, setColor] = useState("#ffffff")
 
-    return( <div>
+    return( <div className='color-picker-container'>
+                <h1>Color Picker</h1>
+                <div className='color-display' style={{backgroundColor: color}}>
 
-            </div>>)
+                </div>
+            </div>)
 }
 export default ColorPicker
