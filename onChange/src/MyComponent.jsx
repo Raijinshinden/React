@@ -24,6 +24,10 @@ function MyComponent(){
 
                 <input value={quantity} onChange={handleQuantityChange} type='number'/>
                 <p>Quantity: {quantity}</p>
+
+                <textarea value={comment} onChange={handleCommentChange}
+                placeholder='Enter delivery instructions'/>
+                <p>Comment: {comment}</p>
            </div>)
 }
 export default MyComponent
