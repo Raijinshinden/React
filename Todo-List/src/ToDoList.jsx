@@ -11,7 +11,8 @@ function ToDoList(){
     }
 
     function addTask(){
-
+        setTasks(t => [...t, newTask]);
+        setNewTask("");
     }
 
     function deleteTask(index){

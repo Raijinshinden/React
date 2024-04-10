@@ -1,3 +1,7 @@
+body{
+  background-color: hsl(0, 0%, 10%);
+}
+
 .to-do-list{
   font-family: Arial, sans-serif;
   text-align: center;
@@ -6,6 +10,7 @@
 
 h1{
   font-size: 4rem;
+  color: white;
 }
 
 button{
@@ -41,4 +46,38 @@ button{
 
 .move-button:hover{
   background-color: hsl(207, 90%, 54%);
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: gray;
+}
+
+ol{
+  padding: 0;
+}
+
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin: 10px;
+  border: 3px solid hsl(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex: 1;
+}
+
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
 }
