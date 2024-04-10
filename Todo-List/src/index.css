@@ -16,7 +16,7 @@ button{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5 ease;
+  transition: background-color 0.3s ease;
 }
 
 .add-button{
@@ -33,4 +33,12 @@ button{
 
 .delete-button:hover{
   background-color: hsl(0, 93%, 44%);
+}
+
+.move-button{
+  background-color: hsl(207, 90%, 64%);
+}
+
+.move-button:hover{
+  background-color: hsl(207, 90%, 54%);
 }
