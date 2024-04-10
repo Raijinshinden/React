@@ -11,8 +11,11 @@ function ToDoList(){
     }
 
     function addTask(){
-        setTasks(t => [...t, newTask]);
-        setNewTask("");
+
+        if(newTask.trim() !== ""){
+            setTasks(t => [...t, newTask]);
+            setNewTask("");
+        } 
     }
 
     function deleteTask(index){
