@@ -3,11 +3,11 @@ import React, {useState} from 'react';
 
 function ToDoList(){
 
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dog"]);
     const [newTask, setNewTask] = useState("");
 
     function handleInputChange(event){
-
+        setNewTask(event.target.value);
     }
 
     function addTask(){
@@ -29,6 +29,21 @@ function ToDoList(){
     return(<div className="To-do-list">
 
                 <h1>To-Do-List</h1>
+
+                <div>
+                    <input 
+                        type="text"
+                        placeholder="Enter a task..."
+                        value={newTask}
+                        onChange={handleInputChange}/>
+                    <button
+                    className="add-button"
+                    onClick={addTask}>
+                        Add
+                    </button>
+                </div>
+
+                <ol></ol>
 
            </div>)
 }
