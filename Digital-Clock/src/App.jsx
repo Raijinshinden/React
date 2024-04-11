@@ -1,8 +1,8 @@
-import ColorPicker from "./ColorPicker.jsx";
+import DigitalClock from "./DigitalClock.jsx"
 
 function App() {
 
-  return(<ColorPicker />)
+  return(<DigitalClock />)
 }
 
 export default App
