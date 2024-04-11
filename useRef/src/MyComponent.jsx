@@ -2,19 +2,23 @@ import React, {useState, useEffect, useRef} from 'react';
 
 function MyComponent(){
 
-    const ref = useRef(0);
+    const ref = useRef(null);
 
     useEffect(() => {
         console.log("COMPONENT RENDERED");
     });
 
     function handleCLick(){
-        ref.current = ref.current + 1;
+        ref.current++;
     }
 
     return(
-        <button onClick={handleClick}>
-            Click me
-        </button>)
+        <div>
+            <button onClick={handleClick}>
+                Click me
+            </button>
+            <input />
+        </div>)
+       
 }
 export default MyComponent
