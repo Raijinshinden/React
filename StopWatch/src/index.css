@@ -40,3 +40,23 @@ body{
 .start-button{
     background-color: hsl(120, 81%, 42%);
 }
+
+.start-button:hover{
+    background-color: hsl(120, 81%, 30%);
+}
+
+.stop-button{
+    background-color: hsl(0, 89%, 45%);
+}
+
+.stop-button:hover{
+    background-color: hsl(0, 89%, 35%);
+}
+
+.reset-button{
+    background-color: hsl(200, 84%, 38%);
+}
+
+.reset-button:hover{
+    background-color: hsl(200, 84%, 30%);
+}
